@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
+    <title>MORRA</title>
 </head>
 <body>
     <h1>MORRA RODRIGO ONO GALVÃO!</h1>
-    <p>e mihras tbm</p>
+    <form action = "{% url 'hello' %}" method = 'post'>
+        {% csrf_token %}
+        <input type='text', name='name'>
+        <input type='submit' value='Enviar'>
 </body>
 </html>
