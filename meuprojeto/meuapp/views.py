@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 import requests
 
+def template(request):
+    return render(request,"meuapp/template.html")
 def home(request):
     return render(request,"meuapp/home.html")
 def hello(request):
